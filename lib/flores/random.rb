@@ -32,7 +32,7 @@ module Flores::Random
   # * The length can be a number or a range `x..y`. If a range, it must be ascending (x < y)
   # * Negative lengths are not permitted and will raise an ArgumentError
   #
-  # @param length [Fixnum or Range] the length of text to generate
+  # @param length [Integer or Range] the length of text to generate
   # @return [String] the generated text
   def self.text(length)
     return text_range(length) if length.is_a?(Range)

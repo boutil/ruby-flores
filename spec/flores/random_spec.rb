@@ -108,7 +108,7 @@ describe Flores::Random do
   end
 
   describe "#integer" do
-    it_behaves_like Numeric, Fixnum do
+    it_behaves_like Numeric, Integer do
       subject { Flores::Random.integer(range) }
     end
   end
